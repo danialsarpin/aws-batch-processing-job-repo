@@ -1,8 +1,8 @@
 #!/bin/bash
 
 STACK_NAME=fargate-batch-job
-REGION=$(aws ec2 describe-availability-zones --output text --query 'AvailabilityZones[0].[RegionName]')
-ACCOUNT_NUMBER=$(aws sts get-caller-identity --query 'Account' --output text)
+REGION=us-west-2
+ACCOUNT_NUMBER=671953789519
 
 SOURCE_REPOSITORY=$PWD
 echo ' Creating CloudFormation Stack '
